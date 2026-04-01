@@ -19,12 +19,7 @@ cursor.executemany("INSERT INTO marks(rollno,subject,mark) values(?,?,?)", [
     (1,'Maths',50),
     (1,'English',55),
     (1,'Science',81),
-    (2,'Maths',50),
-    (2,'English',55),
-    (2,'Science',83),
-    (3,'Maths',60),
-    (3,'English',75),
-    (3,'Science',81)
+   
 ])
 
 
