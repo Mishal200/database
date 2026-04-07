@@ -69,7 +69,7 @@ def add_marks():
     conn.commit()
     print("Marks added successfully!")
 
-# --- READ --- #
+
 def view_students():
     cursor.execute("SELECT * FROM students")
     for row in cursor.fetchall():
@@ -154,7 +154,6 @@ def view_top_3_students():
     for row in cursor.fetchall():
         print(row)
 
-# --- UPDATE --- #
 def update_student():
     rollno = int(input("Enter Rollno to update: "))
     name = input("Enter new name: ")
@@ -179,7 +178,6 @@ def update_subject_name():
     conn.commit()
     print("Subject name updated!")
 
-# --- DELETE --- #
 def delete_student():
     rollno = int(input("Rollno: "))
     cursor.execute("DELETE FROM students WHERE rollno=?", (rollno,))
@@ -198,7 +196,7 @@ def delete_marks_by_subject():
     conn.commit()
     print("Marks of subject deleted!")
 
-# ------------------- Menu ------------------- #
+
 menu = {
     "1": add_student,
     "2": add_marks,
